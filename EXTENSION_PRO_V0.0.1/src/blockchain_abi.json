@@ -1,0 +1,173 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_search_nft_domain",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "_owner_address",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "_store_type",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_store",
+				"type": "string"
+			}
+		],
+		"name": "Create_NFT_Domain",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_search_nft_domain",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "_owner_address",
+				"type": "address"
+			}
+		],
+		"name": "Delete_NFT_Domain_block",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "nft_domain_id",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "bytes32",
+				"name": "nft_domain",
+				"type": "bytes32"
+			},
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "owner_address",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "created_time",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "last_updated_time",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "store_type",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "store",
+				"type": "string"
+			}
+		],
+		"name": "nft_domain_info_event",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_search_nft_domain",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "_owner_address",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "_store_type",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_store",
+				"type": "string"
+			}
+		],
+		"name": "Update_NFT_Domain_block",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_search_NFT_Domain",
+				"type": "string"
+			}
+		],
+		"name": "Check_NFT_Domain",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_search_nft_domain",
+				"type": "string"
+			}
+		],
+		"name": "Read_NFT_Domain_block",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
