@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "React Crome Extension",
+    "version": "1.01",
+    "description": "This is a React Extension",
+    "action": {
+        "default_popup" : "popup.html"
+    },
+    
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "icons": {
+        "16": "twitter16.png",
+        "48": "twitter48.png",
+        "128": "twitter128.png"
+    },
+    "permissions": [
+        "webNavigation",
+        "activeTab",
+        "webRequest", 
+        "webRequestBlocking", 
+        "<all_urls>"
+    ]
+}
